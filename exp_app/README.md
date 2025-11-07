@@ -8,3 +8,6 @@ Este proyecto consiste en la construcción de una hoja de vida modular desarroll
    ```bash
    git clone https://github.com/samuL03/trabajo-con-vite.git
 
+# captura de interfaz grafica
+
+![alt text](image.png)
