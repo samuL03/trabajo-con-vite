@@ -1,5 +1,5 @@
-body {
-  background-color: #e5e7eb; /* gris claro */
+/* body {
+  background-color: #e5e7eb;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,12 +9,12 @@ body {
   max-width: 64rem;
   margin: 5rem auto;
   padding: 2.5rem;
-  background-color: #bfdbfe; /* azul claro */
+  background-color: #bfdbfe;
   border-radius: 2rem;
   margin-left: 150px;
 }
 
-/* ===== Header ===== */
+
 .header {
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@ body {
   color: #4b5563;
 }
 
-/* ===== Contenido ===== */
+
 .content {
   margin-top: 1.5rem;
   display: grid;
@@ -89,7 +89,7 @@ body {
   gap: 1.5rem;
 }
 
-/* ===== Tarjetas ===== */
+
 .card {
   background-color: #dbeafe;
   padding: 1rem;
@@ -117,4 +117,4 @@ body {
   list-style: none;
   padding-left: 0;
   margin: 0.5rem 0 0 0;
-}
+} */
