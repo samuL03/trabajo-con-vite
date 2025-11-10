@@ -1,0 +1,86 @@
+/* 🎨 Estilos generales */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Contenedor principal */
+div {
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #007acc;
+  margin-bottom: 30px;
+}
+
+/* Subtítulos */
+h2 {
+  color: #444;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+/* Cargo y curso */
+h3 {
+  color: #007acc;
+  margin: 10px 0 5px 0;
+}
+
+/* Textos descriptivos */
+p {
+  margin: 3px 0;
+  line-height: 1.4;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 40px;
+}
+
+/* 🧠 Stack de Tecnologías */
+.stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Etiquetas de tecnologías */
+.tech-badge {
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores condicionales */
+.react { background-color: #61dafb; color: #000; }
+.javascript { background-color: #f7df1e; color: #000; }
+.nodejs { background-color: #8cc84b; }
+.html { background-color: #e34f26; }
+.css { background-color: #2965f1; }
+.github { background-color: #333; }
+.git { background-color: #f05032; }
+.mongodb { background-color: #4db33d; }
+.figma { background-color: #a259ff; }
+.tailwind { background-color: #38bdf8; }
