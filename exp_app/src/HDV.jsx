@@ -1,31 +1,27 @@
-import Cabecera from "./componentes/cabeceraCV";
-import Perfil from "./componentes/perfil";
-import Experiencia from "./componentes/experiencia";
-import Educacion from "./componentes/educacion";
-import {data} from "./componentes/data";
-import StackTecnologias from "./componentes/stackTecnologias";
+import { useState } from "react";
+import { datosCV } from "./cvData";
+import CabeceraCV from "./components/CabeceraCV";
+import StackTecnologias from "./components/StackTecnologias";
+import ToggleHabilidades from "./components/ToggleHabilidades";
+import FormularioTecnologia from "./components/FormularioTecnologia";
 
-export default function hoja() {
+export default function App() {
+  const [tecnologias, setTecnologias] = useState(datosCV.tecnologiasIniciales);
+
+  // función para el formulario
+  const agregarTecnologia = (tec) => {
+    setTecnologias((prev) => [...prev, tec]); // inmutable
+  };
+
   return (
-    <div className="container">
-      <Cabecera
-      nombre={data.nombre}
-      cargo={data.cargo}
-      ciudad={data.ciudad}
-      contacto={data.contacto}
-      />
+    <div>
+      <CabeceraCV nombre={datosCV.nombre} perfil={datosCV.perfil} />
 
-      <Perfil resumen={data.perfil} />
+      <FormularioTecnologia agregarTecnologia={agregarTecnologia} />
 
-      <h2>Experiencia</h2>
-      <Experiencia experiencia={data.experiencia} />
+      <StackTecnologias tecnologias={tecnologias} />
 
-      <h2>Educación</h2>
-      <Educacion estudios={data.educacion} />
-
-      <h2>Tecnologías</h2>
-      <StackTecnologias tecnologias={data.tecnologias} />
+      <ToggleHabilidades />
     </div>
   );
 }
-
