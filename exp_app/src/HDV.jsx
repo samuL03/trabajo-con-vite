@@ -1,27 +1,23 @@
-import { useState } from "react";
-import { datosCV } from "./cvData";
-import CabeceraCV from "./components/CabeceraCV";
-import StackTecnologias from "./components/StackTecnologias";
-import ToggleHabilidades from "./components/ToggleHabilidades";
-import FormularioTecnologia from "./components/FormularioTecnologia";
+import { cvData } from "./CvData";
+import Perfil from "./components/Perfil";
+import Habilidades from "./components/Habilidades";
+import Experiencia from "./components/Experiencia";
+import Educacion from "./components/Educacion";
 
-export default function App() {
-  const [tecnologias, setTecnologias] = useState(datosCV.tecnologiasIniciales);
 
-  // función para el formulario
-  const agregarTecnologia = (tec) => {
-    setTecnologias((prev) => [...prev, tec]); // inmutable
-  };
-
+function HDV() {
   return (
-    <div>
-      <CabeceraCV nombre={datosCV.nombre} perfil={datosCV.perfil} />
+    <div style={{ width: "70%", margin: "auto", fontFamily: "Arial" }}>
+      <Perfil nombre={cvData.nombre} titulo={cvData.titulo} perfil={cvData.perfil} />
 
-      <FormularioTecnologia agregarTecnologia={agregarTecnologia} />
+      <Habilidades habilidades={cvData.habilidades} />
 
-      <StackTecnologias tecnologias={tecnologias} />
+      <Experiencia experiencia={cvData.experiencia} />
 
-      <ToggleHabilidades />
+      <Educacion educacion={cvData.educacion} />
+      
     </div>
   );
 }
+
+export default HDV;

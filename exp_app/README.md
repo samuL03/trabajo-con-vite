@@ -1,8 +1,6 @@
 # CV Modular en React – Samuel Rendón Loaiza
 
-Este proyecto consiste en una hoja de vida dinámica desarrollada con React, en la cual se aplican los conceptos de componentes reutilizables, props (propiedades) y desestructuración para organizar la información personal, laboral y académica de manera modular.
-
-El objetivo principal es practicar la reutilización de componentes y la comunicación de datos mediante props, mejorando la estructura y mantenibilidad del código
+Este proyecto mejora un CV en React incorporando eventos y estado con useState. Se añaden dos componentes interactivos: ToggleHabilidades, que muestra u oculta habilidades, y FormularioTecnologia, un formulario controlado para agregar tecnologías sin recargar la página. El estado global se gestiona en App.jsx, y los datos iniciales en cvData.js. Incluye commits organizados y README actualizado.
 
 ## Cómo ejecutar el proyecto
 
