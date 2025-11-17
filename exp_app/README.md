@@ -1,6 +1,8 @@
 # CV Modular en React – Samuel Rendón Loaiza
 
-Este proyecto consiste en la construcción de una hoja de vida modular desarrollada en React, aplicando el Proyecto de práctica: construcción de componentes dinámicos en React utilizando renderizado condicional y de listas.
+Este proyecto consiste en una hoja de vida dinámica desarrollada con React, en la cual se aplican los conceptos de componentes reutilizables, props (propiedades) y desestructuración para organizar la información personal, laboral y académica de manera modular.
+
+El objetivo principal es practicar la reutilización de componentes y la comunicación de datos mediante props, mejorando la estructura y mantenibilidad del código
 
 ## Cómo ejecutar el proyecto
 

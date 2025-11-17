@@ -1,11 +1,14 @@
-function CabeceraCV() {
+import React from "react";
+
+function cabeceraCV({ nombre, cargo, ciudad, contacto }) {
   return (
-    <header>
-      <h1>Samuel Rendón Loaiza</h1>
-      <h2>Desarrollador en proceso</h2>
-      <p> 3108346029 |  samuelrendonloaiza7@gmail.com | Medellín, Colombia</p>
+    <header style={{ textAlign: "center", marginBottom: "30px" }}>
+      <h1>{nombre}</h1>
+      <h3>{cargo}</h3>
+      <p>{ciudad}</p>
+      <p>{contacto}</p>
     </header>
   );
 }
 
-export default CabeceraCV;
+export default cabeceraCV;
