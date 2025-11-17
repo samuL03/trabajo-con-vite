@@ -9,6 +9,8 @@ Este proyecto mejora un CV en React incorporando eventos y estado con useState. 
    git clone https://github.com/samuL03/trabajo-con-vite.git
 
 # captura de interfaz grafica
+
+![alt text](<Captura de pantalla (78).png>)
 ![alt text](image-2.png)
 ![alt text](<src/assets/Captura  2.png>)
 ![alt text](<src/assets/Captura 3.png>)
